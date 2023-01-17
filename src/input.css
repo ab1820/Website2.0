@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Share+Tech+Mono&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #2e0f38;
+  /* color: #4d7b93; */
+}
+
+.main {
+  background-color: rgba(181, 93, 187, 0.199);
+  position: relative;
+}
+
+.links:hover {
+  text-shadow: 1px 1px 5px#0f766e;
+}
+
+.nav {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.253);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background: transparent;
+  margin-bottom: 3rem;
+}
+
+h2:hover,
+.dropdown:hover .dropdown-content {
+  display: block;
+  cursor: pointer;
+  margin-left: -2rem;
+}
+
+.arrow {
+  text-shadow: 1px 1px 5px#0f766e;
+}
+
+main::before {
+  background-image: url(../images/nums-and-ones.png);
+  opacity: 0.1;
+  content: "";
+  position: absolute;
+  top: -3rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-repeat: repeat;
+  z-index: -3;
+}
+
+.main-heading {
+  background: -webkit-linear-gradient(50deg, #be185d, #0f766e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.692);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
+  filter: brightness(1.75);
+}
