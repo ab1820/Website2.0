@@ -40,6 +40,10 @@ h2:hover,
   margin-left: -2rem;
 }
 
+.nav:hover {
+  cursor: pointer;
+}
+
 .arrow {
   text-shadow: 1px 1px 5px#0f766e;
 }
@@ -55,6 +59,12 @@ main::before {
   left: 0;
   background-repeat: repeat;
   z-index: -3;
+}
+
+.skills,
+.languages,
+.frameworks {
+  background-color: rgba(181, 93, 187, 0.212);
 }
 
 .main-heading {
