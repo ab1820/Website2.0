@@ -31,13 +31,14 @@ body {
   display: none;
   background: transparent;
   margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 h2:hover,
 .dropdown:hover .dropdown-content {
   display: block;
   cursor: pointer;
-  margin-left: -2rem;
+  margin-left: -1rem;
 }
 
 .nav:hover {
