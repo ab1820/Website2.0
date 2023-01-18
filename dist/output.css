@@ -596,6 +596,22 @@ video {
   gap: 3rem;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
@@ -645,6 +661,10 @@ video {
   padding: 1rem;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -673,6 +693,10 @@ video {
 
 .pt-12{
   padding-top: 3rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
 }
 
 .text-left{
@@ -930,6 +954,10 @@ main::before {
 @media (min-width: 1536px){
   .\32xl\:w-10\/12{
     width: 83.333333%;
+  }
+
+  .\32xl\:flex-nowrap{
+    flex-wrap: nowrap;
   }
 
   .\32xl\:pt-0{
