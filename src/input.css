@@ -84,3 +84,4 @@ main::before {
 .talents-list {
   @apply text-gray-300 align-middle px-2 font-body w-9/12 2xl:w-10/12 py-2;
 }
+
