@@ -930,6 +930,7 @@ main::before {
     animation: cursor 1s infinite step-end, typing 15s infinite steps(17);
     white-space: nowrap;
     margin: auto;
+    overflow: hidden;
     margin-top: -2.5rem;
   }
 
