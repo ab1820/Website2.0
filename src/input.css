@@ -186,3 +186,7 @@ main::before {
     width: 30%;
   }
 }
+
+.languages-list {
+  @apply inline-block w-[1.5rem] ml-2;
+}

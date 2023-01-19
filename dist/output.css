@@ -604,14 +604,6 @@ video {
   margin-left: 0.5rem;
 }
 
-.ml-6{
-  margin-left: 1.5rem;
-}
-
-.ml-10{
-  margin-left: 2.5rem;
-}
-
 .ml-20{
   margin-left: 5rem;
 }
@@ -642,6 +634,16 @@ video {
 
 .w-\[1\.4rem\]{
   width: 1.4rem;
+}
+
+.translate-x-3\/4{
+  --tw-translate-x: 75%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-1\/3{
+  --tw-translate-x: 33.333333%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-col{
@@ -804,6 +806,11 @@ video {
   line-height: 1;
 }
 
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-teal-700{
   --tw-text-opacity: 1;
   color: rgb(15 118 110 / var(--tw-text-opacity));
@@ -822,6 +829,21 @@ video {
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#be185d\]{
+  --tw-text-opacity: 1;
+  color: rgb(190 24 93 / var(--tw-text-opacity));
+}
+
+.text-\[\#8351a8\]{
+  --tw-text-opacity: 1;
+  color: rgb(131 81 168 / var(--tw-text-opacity));
+}
+
+.text-\[\#22d3ee\]{
+  --tw-text-opacity: 1;
+  color: rgb(34 211 238 / var(--tw-text-opacity));
 }
 
 .antialiased{
@@ -871,7 +893,8 @@ h2:hover,
 .dropdown:hover .dropdown-content {
   display: block;
   cursor: pointer;
-  margin-left: -1rem;
+  /* margin-left: -1rem; */
+  /* Dont add - will move entire Nav to right on hover*/
 }
 
 .nav:hover {
@@ -934,42 +957,43 @@ main::before {
     margin-top: -2.5rem;
   }
 
-  @keyframes cursor{
-    0%, 100%{
+  @keyframes cursor {
+    0%,
+    100% {
       border-color: transparent;
     }
 
-    50%{
+    50% {
       border-color: #000;
     }
   }
 
-  @keyframes typing{
-    0%{
-      width: 0ch
+  @keyframes typing {
+    0% {
+      width: 0ch;
     }
 
     /*Text is hidden*/
 
-    30%{
+    30% {
       width: 17ch;
     }
 
     /*The enitre header will be typed out*/
 
-    80%{
+    80% {
       width: 16ch;
     }
 
     /*Text stays visible*/
 
-    90%{
+    90% {
       width: 0ch;
     }
 
     /*Text is deleted*/
 
-    100%{
+    100% {
       width: 0ch;
     }
 
@@ -1053,6 +1077,12 @@ main::before {
   100% {
     width: 30%;
   }
+}
+
+.languages-list{
+  margin-left: 0.5rem;
+  display: inline-block;
+  width: 1.5rem;
 }
 
 .hover\:translate-x-2:hover{
