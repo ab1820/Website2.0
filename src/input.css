@@ -190,3 +190,15 @@ main::before {
 .languages-list {
   @apply inline-block w-[1.5rem] ml-2;
 }
+
+.py {
+  transform: translate(60%, -40%);
+}
+
+.css {
+  transform: translate(20%, -50%);
+}
+
+.js {
+  transform: translate(30%, -40%);
+}
