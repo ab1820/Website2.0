@@ -596,14 +596,6 @@ video {
   margin-top: -2.5rem;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.ml-2{
-  margin-left: 0.5rem;
-}
-
 .mt-12{
   margin-top: 3rem;
 }
@@ -618,6 +610,10 @@ video {
 
 .w-40{
   width: 10rem;
+}
+
+.w-11\/12{
+  width: 91.666667%;
 }
 
 .w-\[2rem\]{
@@ -701,18 +697,13 @@ video {
   padding: 1.5rem;
 }
 
-.p-2{
-  padding: 0.5rem;
+.p-4{
+  padding: 1rem;
 }
 
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .px-12{
@@ -860,7 +851,7 @@ h2:hover,
 .dropdown:hover .dropdown-content {
   display: block;
   cursor: pointer;
-  margin-left: -1rem;
+  /* margin-left: -1rem; */
 }
 
 .nav:hover {
@@ -923,34 +914,6 @@ main::before {
 }
 
 /* SKILLS BARS WITH KEYFRAMES */
-
-/* .wrapper{
-  position: absolute;
-  transform: translate(-50%,-50%);
-  left: 50%;
-  top: 50%;
-}
-.container{
-  width: 100%;
-  padding: 30px 30px 50px;
-  background-color: white;
-  border: 2px solid rgba(255,255,255,0.06);
-  border-radius: 10px;
-  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
-  backdrop-filter: blur(10px);
-} 
-.container *{
-  font-family: "Poppins",sans-serif;
-  color: black;
-  font-weight: 500;
-}
-h2{
-  margin-bottom: 50px;
-  letter-spacing: 2px;
-  text-align: center;
-  font-size: 33px;
-  font-weight: bold;
-} */
 
 .skills:not(:last-child) {
   margin-bottom: 30px;
@@ -1026,6 +989,10 @@ h2{
     margin-top: 3rem;
   }
 
+  .xsm\:ml-4{
+    margin-left: 1rem;
+  }
+
   .xsm\:w-\[100vw\]{
     width: 100vw;
   }
@@ -1033,37 +1000,21 @@ h2{
   .xsm\:w-9\/12{
     width: 75%;
   }
-
-  .xsm\:pt-6{
-    padding-top: 1.5rem;
-  }
 }
 
 @media (min-width: 500px){
-  .smallM\:ml-4{
-    margin-left: 1rem;
-  }
-
-  .smallM\:ml-8{
-    margin-left: 2rem;
+  .smallM\:ml-\[1\.3rem\]{
+    margin-left: 1.3rem;
   }
 }
 
 @media (min-width: 640px){
-  .sm\:ml-2{
-    margin-left: 0.5rem;
-  }
-
-  .sm\:w-\[80vw\]{
-    width: 80vw;
+  .sm\:w-\[100vw\]{
+    width: 100vw;
   }
 
   .sm\:w-\[80\%\]{
     width: 80%;
-  }
-
-  .sm\:w-\[100vw\]{
-    width: 100vw;
   }
 }
 
