@@ -612,10 +612,6 @@ video {
   display: flex;
 }
 
-.hidden{
-  display: none;
-}
-
 .w-40{
   width: 10rem;
 }
@@ -860,9 +856,12 @@ h2:hover,
   /* Dont add - will move entire Nav to right on hover*/
 }
 
-.nav:hover {
-  cursor: pointer;
-}
+/* 
+@media only screens and (min-width: 320px) and (max-width: 1199px) {
+  .nav:hover {
+    cursor: pointer;
+  }
+} */
 
 .arrow {
   text-shadow: 1px 1px 5px#0f766e;
@@ -1065,6 +1064,10 @@ main::before {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:cursor-pointer:hover{
+  cursor: pointer;
+}
+
 .hover\:text-teal-700:hover{
   --tw-text-opacity: 1;
   color: rgb(15 118 110 / var(--tw-text-opacity));
@@ -1080,22 +1083,12 @@ main::before {
     margin-top: 3rem;
   }
 
-  .xsm\:ml-4{
-    margin-left: 1rem;
-  }
-
   .xsm\:w-\[100vw\]{
     width: 100vw;
   }
 
   .xsm\:w-9\/12{
     width: 75%;
-  }
-}
-
-@media (min-width: 500px){
-  .smallM\:ml-\[1\.3rem\]{
-    margin-left: 1.3rem;
   }
 }
 
@@ -1147,6 +1140,10 @@ main::before {
   .extraLg\:translate-y-\[30\%\]{
     --tw-translate-y: 30%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .extraLg\:cursor-default{
+    cursor: default;
   }
 }
 

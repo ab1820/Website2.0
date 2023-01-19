@@ -40,10 +40,12 @@ h2:hover,
   cursor: pointer;
   /* margin-left: -1rem; */ /* Dont add - will move entire Nav to right on hover*/
 }
-
-.nav:hover {
-  cursor: pointer;
-}
+/* 
+@media only screens and (min-width: 320px) and (max-width: 1199px) {
+  .nav:hover {
+    cursor: pointer;
+  }
+} */
 
 .arrow {
   text-shadow: 1px 1px 5px#0f766e;
