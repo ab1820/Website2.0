@@ -38,7 +38,7 @@ h2:hover,
 .dropdown:hover .dropdown-content {
   display: block;
   cursor: pointer;
-  margin-left: -1rem;
+  /* margin-left: -1rem; */ /* Dont add - will move entire Nav to right on hover*/
 }
 
 .nav:hover {
@@ -92,27 +92,42 @@ main::before {
 }
 
 @media only screen and (min-width: 640px) {
-h1 {
-  border-right: 4px solid #000;
-  animation: cursor 1s infinite step-end, typing 15s infinite steps(17);
-  white-space: nowrap;
-  margin: auto;
-  overflow: hidden;
-  margin-top: -2.5rem;
-}
+  h1 {
+    border-right: 4px solid #000;
+    animation: cursor 1s infinite step-end, typing 15s infinite steps(17);
+    white-space: nowrap;
+    margin: auto;
+    overflow: hidden;
+    margin-top: -2.5rem;
+  }
 
-@keyframes cursor{
-  0%, 100%{border-color: transparent;}
-  50%{border-color: #000;}
-}
+  @keyframes cursor {
+    0%,
+    100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000;
+    }
+  }
 
-@keyframes typing{
-  0%{ width: 0ch} /*Text is hidden*/
-  30%{ width: 17ch;} /*The enitre header will be typed out*/
-  80%{ width: 16ch;} /*Text stays visible*/
-  90%{ width: 0ch;} /*Text is deleted*/
-  100%{ width: 0ch;} /*Text stays hidden*/
-}
+  @keyframes typing {
+    0% {
+      width: 0ch;
+    } /*Text is hidden*/
+    30% {
+      width: 17ch;
+    } /*The enitre header will be typed out*/
+    80% {
+      width: 16ch;
+    } /*Text stays visible*/
+    90% {
+      width: 0ch;
+    } /*Text is deleted*/
+    100% {
+      width: 0ch;
+    } /*Text stays hidden*/
+  }
 }
 
 .syntax {
