@@ -910,7 +910,8 @@ main::before {
 }
 
 .frameworks {
-  border-radius: 10% / 50%;
+  border-radius: 90% 10% / 10% 30%;
+  border-bottom-right-radius: 60%;
 }
 
 .main-heading {
