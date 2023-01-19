@@ -624,6 +624,10 @@ video {
   display: flex;
 }
 
+.hidden{
+  display: none;
+}
+
 .w-40{
   width: 10rem;
 }
@@ -919,6 +923,58 @@ main::before {
   filter: brightness(1.75);
 }
 
+@media only screen and (min-width: 640px) {
+  h1 {
+    border-right: 4px solid #000;
+    animation: cursor 1s infinite step-end, typing 15s infinite steps(17);
+    white-space: nowrap;
+    margin: auto;
+    margin-top: -2.5rem;
+  }
+
+  @keyframes cursor{
+    0%, 100%{
+      border-color: transparent;
+    }
+
+    50%{
+      border-color: #000;
+    }
+  }
+
+  @keyframes typing{
+    0%{
+      width: 0ch
+    }
+
+    /*Text is hidden*/
+
+    30%{
+      width: 17ch;
+    }
+
+    /*The enitre header will be typed out*/
+
+    80%{
+      width: 16ch;
+    }
+
+    /*Text stays visible*/
+
+    90%{
+      width: 0ch;
+    }
+
+    /*Text is deleted*/
+
+    100%{
+      width: 0ch;
+    }
+
+    /*Text stays hidden*/
+  }
+}
+
 .syntax {
   width: 2rem;
 }
@@ -1075,10 +1131,6 @@ main::before {
 
   .extraLg\:block{
     display: block;
-  }
-
-  .extraLg\:hidden{
-    display: none;
   }
 
   .extraLg\:w-\[70vw\]{
