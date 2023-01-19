@@ -38,7 +38,7 @@ h2:hover,
 .dropdown:hover .dropdown-content {
   display: block;
   cursor: pointer;
-  /* margin-left: -1rem; */
+  margin-left: -1rem;
 }
 
 .nav:hover {
@@ -65,7 +65,19 @@ main::before {
 .my-skills,
 .languages,
 .frameworks {
-  background-color: rgba(181, 93, 187, 0.212);
+  background-color: rgba(15, 7, 15, 0.212);
+}
+
+.languages {
+  border-radius: 10% 30% 50% 70%;
+}
+
+.my-skills {
+  border-radius: 50% 20% / 10% 40%;
+}
+
+.frameworks {
+  border-radius: 10% / 50%;
 }
 
 .main-heading {
