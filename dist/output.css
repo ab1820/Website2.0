@@ -805,6 +805,11 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-\[\#be185d\]{
+  --tw-text-opacity: 1;
+  color: rgb(190 24 93 / var(--tw-text-opacity));
+}
+
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -818,8 +823,21 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+:root {
+  --bg-color: #000;
+  --dark-purple: #2e0f38;
+  --green-headings: #4d7b93;
+  --the-pink: #b45dbb;
+  --font-color: #fff;
+  --body-text: 'Share Tech Mono', monospace;
+  --heading-text: 'Marck Script', cursive;
+  --light-purple: #8351a8;
+  --dark-blue-teal: #1a2c54;
+}
+
 body {
-  background-color: #2e0f38;
+  /* background-color: #2e0f38; */
+  background-color: #000;
   /* color: #4d7b93; */
 }
 
@@ -1057,6 +1075,13 @@ main::before {
 
 .js {
   transform: translate(30%, -40%);
+}
+
+.down-arrow {
+  text-align: center;
+  transform: translateY(190%);
+  text-shadow: 1px 6px 5px #2e0f38;
+  margin-bottom: 1rem;
 }
 
 .hover\:translate-x-2:hover{

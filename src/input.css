@@ -4,6 +4,18 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-color: #000;
+  --dark-purple: #2e0f38;
+  --green-headings: #4d7b93;
+  --the-pink: #b45dbb;
+  --font-color: #fff;
+  --body-text: 'Share Tech Mono', monospace;
+  --heading-text: 'Marck Script', cursive;
+  --light-purple: #8351a8;
+  --dark-blue-teal: #1a2c54;
+}
+
 body {
   /* background-color: #2e0f38; */
   background-color: #000;
@@ -204,4 +216,11 @@ main::before {
 
 .js {
   transform: translate(30%, -40%);
+}
+
+.down-arrow {
+  text-align: center;
+  transform: translateY(190%);
+  text-shadow: 1px 6px 5px #2e0f38;
+  margin-bottom: 1rem;
 }
