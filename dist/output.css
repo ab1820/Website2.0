@@ -624,6 +624,11 @@ video {
   width: 2rem;
 }
 
+.translate-x-\[10\%\]{
+  --tw-translate-x: 10%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -724,10 +729,6 @@ video {
   padding-left: 0.5rem;
 }
 
-.pl-8{
-  padding-left: 2rem;
-}
-
 .pt-6{
   padding-top: 1.5rem;
 }
@@ -770,6 +771,11 @@ video {
   line-height: 2rem;
 }
 
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-7xl{
   font-size: 4.5rem;
   line-height: 1;
@@ -778,11 +784,6 @@ video {
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-teal-700{
@@ -829,8 +830,8 @@ video {
   --green-headings: #4d7b93;
   --the-pink: #b45dbb;
   --font-color: #fff;
-  --body-text: 'Share Tech Mono', monospace;
-  --heading-text: 'Marck Script', cursive;
+  --body-text: "Share Tech Mono", monospace;
+  --heading-text: "Marck Script", cursive;
   --light-purple: #8351a8;
   --dark-blue-teal: #1a2c54;
 }
@@ -873,13 +874,6 @@ h2:hover,
   /* margin-left: -1rem; */
   /* Dont add - will move entire Nav to right on hover*/
 }
-
-/* 
-@media only screens and (min-width: 320px) and (max-width: 1199px) {
-  .nav:hover {
-    cursor: pointer;
-  }
-} */
 
 .arrow {
   text-shadow: 1px 1px 5px#0f766e;
@@ -1137,10 +1131,6 @@ main::before {
   .odd\:mt-0{
     margin-top: 0px;
   }
-
-  .odd\:-ml-8{
-    margin-left: -2rem;
-  }
 }
 
 @media (min-width: 1024px){
@@ -1164,6 +1154,11 @@ main::before {
 
   .extraLg\:translate-y-\[30\%\]{
     --tw-translate-y: 30%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .extraLg\:translate-x-\[20\%\]{
+    --tw-translate-x: 20%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 

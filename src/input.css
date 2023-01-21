@@ -10,8 +10,8 @@
   --green-headings: #4d7b93;
   --the-pink: #b45dbb;
   --font-color: #fff;
-  --body-text: 'Share Tech Mono', monospace;
-  --heading-text: 'Marck Script', cursive;
+  --body-text: "Share Tech Mono", monospace;
+  --heading-text: "Marck Script", cursive;
   --light-purple: #8351a8;
   --dark-blue-teal: #1a2c54;
 }
@@ -53,12 +53,6 @@ h2:hover,
   cursor: pointer;
   /* margin-left: -1rem; */ /* Dont add - will move entire Nav to right on hover*/
 }
-/* 
-@media only screens and (min-width: 320px) and (max-width: 1199px) {
-  .nav:hover {
-    cursor: pointer;
-  }
-} */
 
 .arrow {
   text-shadow: 1px 1px 5px#0f766e;
