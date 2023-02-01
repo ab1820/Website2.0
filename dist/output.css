@@ -829,7 +829,7 @@ video {
 }
 
 :root {
-  --bg-color: #000;
+  --bg-color: rgb(15, 15, 15);
   --dark-purple: #2e0f38;
   --green-headings: #4d7b93;
   --the-pink: #b45dbb;
@@ -842,7 +842,7 @@ video {
 
 body {
   /* background-color: #2e0f38; */
-  background-color: #000;
+  background-color: var(--bg-color);
   /* color: #4d7b93; */
 }
 
