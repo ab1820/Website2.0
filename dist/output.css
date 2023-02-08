@@ -838,6 +838,7 @@ video {
   --heading-text: "Marck Script", cursive;
   --light-purple: #8351a8;
   --dark-blue-teal: #1a2c54;
+  --h2-headings: #be185d;
 }
 
 body {
@@ -1096,6 +1097,16 @@ main::before {
   transform: translateY(190%);
   text-shadow: 1px 6px 5px #2e0f38;
   margin-bottom: 1rem;
+}
+
+/* <!-- ------------- PROJECTS SECTION OF PAGE -------------- --> */
+
+.projects {
+  color: var(--h2-headings);
+  font-family: var(--heading-text);
+  transform: translateY(1050%);
+  font-size: 4rem;
+  position: absolute;
 }
 
 .hover\:translate-x-2:hover{
