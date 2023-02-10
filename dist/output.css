@@ -629,10 +629,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.cursor-pointer{
-  cursor: pointer;
-}
-
 .flex-col{
   flex-direction: column;
 }
@@ -810,11 +806,6 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-\[\#be185d\]{
-  --tw-text-opacity: 1;
-  color: rgb(190 24 93 / var(--tw-text-opacity));
-}
-
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -866,6 +857,20 @@ body {
 .main {
   background-color: rgba(181, 93, 187, 0.199);
   position: relative;
+}
+
+/* For sticky nav only */
+
+@media screen and (min-width: 1200px) {
+  .nav-wrapper {
+    position: sticky;
+    top: 0;
+  }
+
+  .main-wrapper {
+    overflow: auto;
+    transform: translateY(-10%);
+  }
 }
 
 .links:hover {
@@ -1111,11 +1116,6 @@ main::before {
 
 .hover\:translate-x-2:hover{
   --tw-translate-x: 0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:translate-y-1:hover{
-  --tw-translate-y: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 

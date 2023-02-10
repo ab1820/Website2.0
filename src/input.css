@@ -30,16 +30,29 @@ body {
 }
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 .main {
   background-color: rgba(181, 93, 187, 0.199);
   position: relative;
+}
+
+/* For sticky nav only */
+@media screen and (min-width: 1200px) {
+  .nav-wrapper {
+    position: sticky;
+    top: 0;
+  }
+
+  .main-wrapper {
+    overflow: auto;
+    transform: translateY(-10%);
+  }
 }
 
 .links:hover {
